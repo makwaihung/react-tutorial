@@ -1,0 +1,107 @@
+html,body{
+  margin: 0;
+  padding: 0;
+}
+body{
+  background-color: #fff;
+  font: 16px '微软雅黑';
+}
+
+.ui.content-block{
+  background-color: #f4f4f4;
+  margin: 20px;
+  padding: 15px 20px;
+  border-radius: 5px;
+  .title{
+    margin-top: 0;
+  }
+}
+
+
+// 分割线
+.ui.divider {
+    width: 100%;
+    height: 1px;
+    background: #4c4c4c;
+    margin-bottom: 20px;
+}
+
+// 评论样式
+.ui.comments{
+  background-color: #fff;
+  padding: 10px 20px;
+  .content{
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+    &:before{
+      content:'';
+      display: block;
+      clear: both;
+    }
+  }
+  .author{
+    color: #333;
+    font-size:20px;
+  }
+  .date{
+    color:#666;
+    font-size: 14px;
+    float:right;
+  }
+  .text{
+    padding: 5px 10px;
+  }
+}
+
+// 评论输入框
+.ui.form{
+  .field{
+    clear: both;
+    margin: 0 0 15px;
+  }
+}
+
+.ui.input{
+  width: 100%;
+  height: 30px;
+  line-height: 30px;
+  padding: 4px 5px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.ui.textarea{
+    width: 100%;
+    height: 200px;
+    padding: 8px 5px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.ui.button{
+  cursor: pointer;
+  padding: 0 20px;
+  height: 45px;
+  line-height: 45px;
+  font-size: 16px;
+  border-radius: 4px;
+  border:0;
+  font-family: '微软雅黑';
+  margin-right: 10px;
+}
+
+.ui.button.green{
+  background-color: #009c95;
+  color: #fff;
+}
+
+.ui.select{
+  min-width: 100px;
+  padding: 8px 5px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
