@@ -11,7 +11,7 @@ var config = {
       'webpack-dev-server/client?http://localhost:8080',
        path.resolve(__dirname, 'src/index.js')
     ],
-    vendor: ['react', 'react-dom','jquery'],
+    vendor: ['react', 'react-dom'],
   },
   output: {
     path: path.resolve(__dirname, 'build'),
@@ -31,10 +31,14 @@ var config = {
         exclude: path.resolve(__dirname, 'node_modules')
       },
       {
-        test: /\.scss$/,
-        loader: 'style!css!sass',
-        exclude: path.resolve(__dirname, 'node_modules')
-      }
+        test: /\.css$/,
+        loader: 'style!css',
+        // exclude: path.resolve(__dirname, 'node_modules')
+      },
+      {
+        test: /\.(gif|jpg|png|woff|svg|eot|ttf)\??.*$/,
+        loader: 'url?limit=25000'
+      },
     ]
   },
   plugins: [
